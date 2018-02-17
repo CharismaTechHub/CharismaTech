@@ -26,5 +26,12 @@ namespace CT.Website.Controllers
 
 			return View();
 		}
+
+		public ActionResult OurTeam()
+		{
+
+
+			return View();
+		}
 	}
 }
