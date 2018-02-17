@@ -1,0 +1,24 @@
+﻿@using CT.Website.Models
+@model List<TeamMember>
+
+@{
+    ViewBag.Title = "Our Team";    
+}
+
+<h1>@ViewBag.Title</h1>
+
+@if (Model != null && Model.Any())
+{
+    <ul>
+        @foreach (var teamMember in Model)
+        {
+            <li class="teamMember">
+                <p>@teamMember.Name</p>
+                <p>@teamMember.Positions</p>
+                <p>@teamMember.Description</p>
+                <a href="mailto:@teamMember.Email" target="blank">@teamMember.Email</a>
+                <img src="@teamMember.ImageUrl" alt="member image"/>
+            </li>
+        }
+    </ul>
+}

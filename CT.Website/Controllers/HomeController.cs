@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CT.Website.Repositories;
 
 namespace CT.Website.Controllers
 {
@@ -29,9 +30,9 @@ namespace CT.Website.Controllers
 
 		public ActionResult OurTeam()
 		{
+			var teamMmberList = TeamMemberRepository.GetTeamMembers();
 
-
-			return View();
+			return View(teamMmberList);
 		}
 	}
 }
