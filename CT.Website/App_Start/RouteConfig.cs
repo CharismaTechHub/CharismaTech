@@ -14,8 +14,26 @@ namespace CT.Website
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
 			routes.MapRoute(
+				name: "AboutUs",
+				url: "about-us",
+				defaults: new { controller = "Home", action = "About" }
+			);
+
+			routes.MapRoute(
+				name: "Contact",
+				url: "contact",
+				defaults: new { controller = "Home", action = "Contact" }
+			);
+
+			routes.MapRoute(
+				name: "OurTeam",
+				url: "our-team",
+				defaults: new { controller = "Home", action = "OurTeam" }
+			);
+
+			routes.MapRoute(
 				name: "Default",
-				url: "{controller}/{action}/{id}",
+				url: "{action}/{id}",
 				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
 			);
 		}

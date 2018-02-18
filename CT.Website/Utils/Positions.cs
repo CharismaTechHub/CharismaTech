@@ -4,6 +4,7 @@
 	{		
 		public const string Associate = "Associate";
 		public const string Administrator = "Administrator";
+		public const string CoFounder = "Co-Founder";
 		public const string NetDeveloper = ".NET Developer";
 	}
 }
