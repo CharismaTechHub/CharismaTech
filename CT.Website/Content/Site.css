@@ -63,10 +63,6 @@ textarea {
     }
 }
 
-.teamMember {
-}
-
-
 /*Form component styles.*/
 .page-title {
     text-align: center;
@@ -163,7 +159,7 @@ textarea {
     .form-image {
         position: absolute;
         left: 1px;
-        top: 670px;
+        top: 750px;
     }
 }
 
@@ -176,7 +172,7 @@ textarea {
     .form-image {
         position: absolute;
         left: 10px;
-        top: 750px;
+        top: 820px;
     }
 }
 

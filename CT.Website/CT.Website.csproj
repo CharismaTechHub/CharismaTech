@@ -173,6 +173,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\OurTeam.cshtml" />
     <Content Include="Views\ContactUs\SendEmail.cshtml" />
+    <Content Include="Views\ContactUs\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
