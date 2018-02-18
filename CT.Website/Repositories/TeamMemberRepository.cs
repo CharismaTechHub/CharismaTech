@@ -13,7 +13,7 @@ namespace CT.Website.Repositories
 			teamMemberList.Add(new TeamMember
 			{
 				Name = "Ancuta Gicoveanu",
-				Positions = string.Join(", ", new List<string> {Positions.Associate, Positions.Administrator, Positions.NetDeveloper }),
+				Positions = string.Join(", ", new List<string> {Positions.CoFounder, Positions.NetDeveloper }),
 				Description = "Ancuta is a Deveoper with an experience of 5 years working with .NET technologies. " + 
 							"In the last 2 years, she specialized in building websites using the .NET based Sitecore CMS.",
 				Email = "ancuta.anisiei@gmail.com",
@@ -23,7 +23,7 @@ namespace CT.Website.Repositories
 			teamMemberList.Add(new TeamMember
 			{
 				Name = "Cristina Dragos",
-				Positions = string.Join(", ", new List<string> { Positions.Associate, Positions.NetDeveloper }),
+				Positions = string.Join(", ", new List<string> { Positions.CoFounder, Positions.NetDeveloper }),
 				Description = "Cristina has been working in IT for over 11 years. " + 
 							"She started as a tester for 2 years, and then became a developer working with Progress technologies and briefly with Python. " + 
 							"For the last 6 years, her focus was on working with .NET technologies. " + 
@@ -36,7 +36,7 @@ namespace CT.Website.Repositories
 			teamMemberList.Add(new TeamMember
 			{
 				Name = "Cosmin Popa",
-				Positions = string.Join(", ", new List<string> { Positions.Associate, Positions.NetDeveloper }),
+				Positions = string.Join(", ", new List<string> { Positions.CoFounder, Positions.NetDeveloper }),
 				Description = "Cosmin is a Senior Deveoper with an experience of 12 years working with .NET technologies. " + 
 						"During this time, he also worked at a great extent with C++. " +
 						"In the last 2 years, Cosmin specialized in building websites using the .NET based Sitecore CMS.",

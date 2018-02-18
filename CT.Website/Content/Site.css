@@ -23,6 +23,16 @@ textarea {
     max-width: 280px;
 }
 
-.teamMember {
-    
+li.teamMember {
+    padding-bottom: 20px;
+}
+
+.teamMemberImg {
+    height: auto;
+    width: 200px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 50px;    
 }
