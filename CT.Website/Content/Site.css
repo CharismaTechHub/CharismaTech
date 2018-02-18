@@ -63,10 +63,6 @@ textarea {
     }
 }
 
-.teamMember {
-}
-
-
 /*Form component styles.*/
 .page-title {
     text-align: center;
@@ -184,4 +180,17 @@ textarea {
     .form-image {
         display: none;
     }
+}
+li.teamMember {
+    padding-bottom: 20px;
+}
+
+.teamMemberImg {
+    height: auto;
+    width: 200px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 50px;    
 }

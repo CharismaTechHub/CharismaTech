@@ -7,18 +7,26 @@
 
 <h1>@ViewBag.Title</h1>
 
-@if (Model != null && Model.Any())
-{
-    <ul>
-        @foreach (var teamMember in Model)
-        {
-            <li class="teamMember">
-                <p>@teamMember.Name</p>
-                <p>@teamMember.Positions</p>
-                <p>@teamMember.Description</p>
-                <a href="mailto:@teamMember.Email" target="blank">@teamMember.Email</a>
-                <img src="@teamMember.ImageUrl" alt="member image"/>
-            </li>
-        }
-    </ul>
-}
+<div class="container">
+    @if (Model != null && Model.Any())
+    {
+        <ul class="list-unstyled">
+            @foreach (var teamMember in Model)
+            {
+                <li class="teamMember">
+                    <div class="row">
+                        <div class="col-xs-8 col-md-3">
+                            <img src="@teamMember.ImageUrl" alt="member image" class="teamMemberImg"/>
+                        </div>
+                        <div class="col-xs-10 col-md-9">
+                            <h2>@teamMember.Name</h2>
+                            <h3>@teamMember.Positions</h3>
+                            <p>@teamMember.Description</p>
+                            <a href="mailto:@teamMember.Email" target="blank">@teamMember.Email</a>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+</div>
