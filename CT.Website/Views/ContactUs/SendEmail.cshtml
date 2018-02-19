@@ -7,36 +7,38 @@
         </div>
         <div class="page-sub-title">Get in touch and start unlocking the power of your data today.</div>
         <div class="form-container">
-            @using (Ajax.BeginForm("SendEmail", "ContactUs", new AjaxOptions() { HttpMethod = "Post"}))
+            @using (Ajax.BeginForm("SendEmail", "ContactUs", new AjaxOptions() { UpdateTargetId = "form-content", HttpMethod = "Post" }))
             {
-            <div class="row">
-                <div class="form-item col-md-6">
-                    @Html.TextBoxFor(m => m.FirstName, new {@class = "form-elem", type = "text", placeholder = "First Name *"})
-                    <div class="validationMessageBox">@Html.ValidationMessageFor(m => m.FirstName)</div>
-                </div>
-                <div class="form-item col-md-6">
-                    @Html.TextBoxFor(m => m.LastName, new {@class = "form-elem", type = "text", placeholder = "Last Name *"})
-                    <div class="validationMessageBox">@Html.ValidationMessageFor(m => m.LastName)</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-item col-md-6">
-                    @Html.TextBoxFor(m => m.Company, new {@class = "form-elem", type = "text", placeholder = "Company"})
-                </div>
-                <div class="form-item col-md-6">
-                    @Html.TextBoxFor(m => m.Email, new {@class = "form-elem", type = "text", placeholder = "Email address *"})
-                    <div class="validationMessageBox">@Html.ValidationMessageFor(m => m.Email)</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-item col-lg-12">
-                    @Html.TextAreaFor(m => m.Message, new {@class = "form-elem text-area", type = "text", placeholder = "Message"})
-                </div>
-            </div>
+                <div class="form-content">
+                    <div class="row">
+                        <div class="form-item col-md-6">
+                            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-elem", type = "text", placeholder = "First Name *" })
+                            <div class="validationMessageBox">@Html.ValidationMessageFor(m => m.FirstName)</div>
+                        </div>
+                        <div class="form-item col-md-6">
+                            @Html.TextBoxFor(m => m.LastName, new { @class = "form-elem", type = "text", placeholder = "Last Name *" })
+                            <div class="validationMessageBox">@Html.ValidationMessageFor(m => m.LastName)</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-md-6">
+                            @Html.TextBoxFor(m => m.Company, new { @class = "form-elem", type = "text", placeholder = "Company" })
+                        </div>
+                        <div class="form-item col-md-6">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-elem", type = "text", placeholder = "Email address *" })
+                            <div class="validationMessageBox">@Html.ValidationMessageFor(m => m.Email)</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-lg-12">
+                            @Html.TextAreaFor(m => m.Message, new { @class = "form-elem text-area", type = "text", placeholder = "Message" })
+                        </div>
+                    </div>
 
-            <div class="row-submit">
-                <input type="submit" value="SEND MESSAGE" class="btn btn-primary btn-submit">
-            </div>
+                    <div class="row-submit">
+                        <input type="submit" value="SEND MESSAGE" class="btn btn-primary btn-submit">
+                    </div>
+                </div>
             }
         </div>
         <div class="form-image">

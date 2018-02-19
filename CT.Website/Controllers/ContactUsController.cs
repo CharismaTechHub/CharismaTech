@@ -7,14 +7,14 @@ namespace CT.Website.Controllers
     public class ContactUsController : Controller
     {
         [HttpGet]
-        public ActionResult SendEmail()
+        public PartialViewResult SendEmail()
         {
             User currentUser = new User();
             return PartialView(currentUser);
         }
 
         [HttpPost]
-        public ActionResult SendEmail(User currentUser)
+        public PartialViewResult SendEmail(User currentUser)
         {
             return PartialView(currentUser);
         }
