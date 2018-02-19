@@ -128,6 +128,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\TeamMember.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\EmailSenderRepository.cs" />
     <Compile Include="Repositories\TeamMemberRepository.cs" />
     <Compile Include="Utils\Positions.cs" />
   </ItemGroup>
@@ -175,6 +176,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\OurTeam.cshtml" />
     <Content Include="Views\ContactUs\SendEmail.cshtml" />
+    <Content Include="Views\ContactUs\FormResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

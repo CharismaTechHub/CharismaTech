@@ -3,9 +3,26 @@
     padding-bottom: 20px;
 }
 
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
 h2 {
     font-size: 60px;
     font-weight: 300;
+}
+
+.page-title {
+    text-align: center;
+    z-index: 1000;
+}
+
+.page-sub-title {
+    text-align: center;
+    line-height: 1.2em;
+    z-index: 1000;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -55,7 +72,7 @@ textarea {
 }
 
 
-/*Mobile and Table Styles*/
+/*Mobile and Tablet Styles*/
 @media(max-width: 768px) {
     h2 {
         font-size: 40px;
@@ -70,17 +87,7 @@ textarea {
     }
 }
 
-/*Form component styles.*/
-.page-title {
-    text-align: center;
-    z-index: 1000;
-}
-
-.page-sub-title {
-    text-align: center;
-    line-height: 1.2em;
-    z-index: 1000;
-}
+/*Form styles.*/
 
 .form-section {
     background-color: #2a3335;
@@ -158,6 +165,14 @@ textarea {
     height: 200px;
 }
 
+#response-message {
+    min-height: 300px;
+}
+
+.form-response {
+    color: #1ea9ce;
+}
+
 @media(min-width: 1440px) {
     .form-image {
         width: 394px;
@@ -189,7 +204,9 @@ textarea {
         display: none;
     }
 }
+/*End form styles*/
 
+/*Team Member styles*/
 li.teamMember {
     padding-bottom: 20px;
 }
@@ -198,8 +215,4 @@ li.teamMember {
     height: auto;
     width: 200px;
 }
-
-h1 {
-    padding-top: 20px;
-    padding-bottom: 50px;
-}
+/*End Team Member styles*/
