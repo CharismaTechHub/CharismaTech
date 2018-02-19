@@ -28,6 +28,13 @@ textarea {
     max-width: 280px;
 }
 
+.validationMessageBox {
+    color: red;
+    font-size: smaller;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
 /*Responsive generic styles*/
 
 /*Desktop styles*/
@@ -117,6 +124,7 @@ textarea {
 
 .form-item {
     margin-bottom: 30px;
+    min-height: 68px;
 }
 
 .form-elem {
@@ -181,6 +189,7 @@ textarea {
         display: none;
     }
 }
+
 li.teamMember {
     padding-bottom: 20px;
 }
@@ -192,5 +201,5 @@ li.teamMember {
 
 h1 {
     padding-top: 20px;
-    padding-bottom: 50px;    
+    padding-bottom: 50px;
 }
