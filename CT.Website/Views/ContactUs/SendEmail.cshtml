@@ -1,0 +1,50 @@
+﻿@model CT.Website.Models.User
+
+<section class="form-section">
+    <div class="container">
+        <div class="page-title">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="page-sub-title">Get in touch and start unlocking the power of your data today.</div>
+        <div class="form-container">
+            @using (Ajax.BeginForm("SendEmail", "ContactUs", new AjaxOptions() { InsertionMode = InsertionMode.Replace, UpdateTargetId = "response-message", HttpMethod = "Post" }))
+            {
+                <div class="form-content">
+                    <div id="response-message">
+                        <div class="row">
+                            <div class="form-item col-md-6">
+                                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-elem", type = "text", placeholder = "First Name *" })
+                                <div class="validationMessageBox">@Html.ValidationMessageFor(m => m.FirstName)</div>
+                            </div>
+                            <div class="form-item col-md-6">
+                                @Html.TextBoxFor(m => m.LastName, new { @class = "form-elem", type = "text", placeholder = "Last Name *" })
+                                <div class="validationMessageBox">@Html.ValidationMessageFor(m => m.LastName)</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-md-6">
+                                @Html.TextBoxFor(m => m.Company, new { @class = "form-elem", type = "text", placeholder = "Company" })
+                            </div>
+                            <div class="form-item col-md-6">
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-elem", type = "text", placeholder = "Email address *" })
+                                <div class="validationMessageBox">@Html.ValidationMessageFor(m => m.Email)</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-lg-12">
+                                @Html.TextAreaFor(m => m.Message, new { @class = "form-elem text-area", type = "text", placeholder = "Message" })
+                            </div>
+                        </div>
+
+                        <div class="row-submit">
+                            <input type="submit" value="SEND MESSAGE" class="btn btn-primary btn-submit">
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="form-image">
+            <img src="~/Images/paper-plane.png" class="image-elem" alt="" srcset="~/Images/paper-plane.png 394w, ~/Images/paper-plane.png-300x197.png 300w" sizes="(max-width: 394px) 100vw, 394px">
+        </div>
+    </div>
+</section>
