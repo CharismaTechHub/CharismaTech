@@ -6,3 +6,5 @@
 /CT.Website/bin
 /packages
 .vs
+/*.user
+/CT.Website/*.user
