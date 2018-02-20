@@ -22,6 +22,12 @@ namespace CT.Website
 			routes.MapRoute(
 				name: "Contact",
 				url: "contact",
+				defaults: new { controller = "Home", action = "Contact" }
+			);
+
+			routes.MapRoute(
+				name: "ContactUs",
+				url: "contact",
 				defaults: new { controller = "ContactUs", action = "SendEmail" }
 			);
 

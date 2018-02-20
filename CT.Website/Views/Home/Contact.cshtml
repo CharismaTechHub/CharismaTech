@@ -1,7 +1,11 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h1>@ViewBag.Title</h1>
 
+<div class="container">
+    <h1>@ViewBag.Title</h1>
+</div>
 
-
+<div class="row">
+    @{ Html.RenderAction("SendEmail", "ContactUs");}
+</div>
