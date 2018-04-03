@@ -1,4 +1,9 @@
-﻿body {
+﻿/* Colors from the logo:
+   Charisma - rgb(27, 24, 64) 
+   Tech - rgb(98, 85, 229)
+*/
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -215,4 +220,62 @@ li.teamMember {
     height: auto;
     width: 200px;
 }
+
+li.teamMember h2 {
+    color: rgb(27, 24, 64);
+    margin-top: 5px;
+    font-size: 48px;
+}
+
+li.teamMember h3 {
+    color: rgb(98, 85, 229);
+}
 /*End Team Member styles*/
+
+/* Header styles */
+img.logo {
+    width: 300px;
+    height: auto;
+}
+
+div.header-menu {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border: none;
+}
+
+div.header-menu .navbar-nav > li > a {
+    color: rgb(27, 24, 64);
+    font-size: 24px;
+}
+
+div.header-menu .navbar-nav > li > a:hover {
+    color: rgb(98, 85, 229);
+}
+
+div.header-menu .menu-links {
+    float: right;
+}
+/* End Header styles */
+
+/* Page elements styles */
+.page-container {
+    padding-top: 50px;
+}
+
+div.page-container h1 {
+    padding-left: 10px;
+    color: rgb(27, 24, 64);
+}
+
+p {
+    color: rgb(27, 24, 64);
+}
+/* End Page elements styles */
+
+/* Footer styles */
+footer p {
+    font-size: 20px;
+}
+/* End Footer styles*/
