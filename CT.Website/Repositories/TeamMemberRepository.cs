@@ -14,7 +14,7 @@ namespace CT.Website.Repositories
 			{
 				Name = "Ancuta Gicoveanu",
 				Positions = string.Join(", ", new List<string> {Positions.CoFounder, Positions.NetDeveloper }),
-				Description = "Ancuta is a Deveoper with an experience of 5 years working with .NET technologies. " + 
+				Description = "Ancuta is a Developer with an experience of 5 years working with .NET technologies. " + 
 							"In the last 2 years, she specialized in building websites using the .NET based Sitecore CMS.",
 				Email = "ancuta.anisiei@gmail.com",
 				ImageUrl = "/../Images/anca.jpg"
