@@ -181,6 +181,7 @@
     <Content Include="Views\Home\OurTeam.cshtml" />
     <Content Include="Views\ContactUs\SendEmail.cshtml" />
     <Content Include="Views\ContactUs\FormResult.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Components\TextComponent.cshtml" />
   </ItemGroup>
   <ItemGroup>

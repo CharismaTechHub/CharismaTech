@@ -19,7 +19,13 @@ namespace CT.Website
 				defaults: new { controller = "Home", action = "About" }
 			);
 
-			routes.MapRoute(
+            routes.MapRoute(
+                name: "Services",
+                url: "our-services",
+                defaults: new { controller = "Home", action = "Services" }
+            );
+
+            routes.MapRoute(
 				name: "Contact",
 				url: "contact",
 				defaults: new { controller = "Home", action = "Contact" }
