@@ -143,10 +143,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\337227-PA00ZJ-255.jpg" />
     <Content Include="Images\anca.jpg" />
     <Content Include="Images\cosmin.jpg" />
     <Content Include="Images\cristina.jpg" />
     <Content Include="Images\envelopes.png" />
+    <Content Include="Images\florencia-viadana-744467-unsplash.jpg" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\paper-plane.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -184,6 +186,7 @@
     <Content Include="Views\ContactUs\FormResult.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Components\TextComponent.cshtml" />
+    <Content Include="Views\Components\HeroComponent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,18 @@
+﻿@model CT.Website.Models.Hero
+
+@{
+    Layout = null;
+}
+
+@if (Model != null)
+{
+    if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <div class="hero-component" style="background: url(@Model.ImageUrl) no-repeat; background-size: cover;">
+            @if (!string.IsNullOrEmpty(Model.Title))
+            {
+                <h1 class="hero-title">@Model.Title</h1>
+            }
+        </div>
+    }
+}

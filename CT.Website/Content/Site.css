@@ -110,7 +110,6 @@ textarea {
     margin-right: 0px !important;
     margin-left: 0px !important;
     padding-bottom: 10px;
-    border-bottom: 2px solid #e2e2e2;
 }
 
 .row-submit {
@@ -215,7 +214,13 @@ textarea {
 
 /*Team Member styles*/
 li.teamMember {
+    padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+ul.list-unstyled li.teamMember:last-child {
+    border-bottom: none;
 }
 
 .teamMemberImg {
@@ -259,6 +264,24 @@ div.header-menu .navbar-nav > li > a:hover {
 div.header-menu .menu-links {
     float: right;
 }
+
+@media (min-width: 1200px) {
+    .container.header-container {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container.header-container {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container.header-container {
+        max-width: 1400px;
+    }
+}
 /* End Header styles */
 
 /* Page elements styles */
@@ -275,6 +298,18 @@ p {
     color: rgb(27, 24, 64);
 }
 /* End Page elements styles */
+
+/* Hero Component styles */
+div.hero-component {
+    height: 400px;
+    width: 100%;        
+}
+
+h1.hero-title {
+    z-index: 1000;
+    color: white;
+}
+/* End Hero Component styles */
 
 /* Footer styles */
 footer p {
