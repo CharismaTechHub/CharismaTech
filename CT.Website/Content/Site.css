@@ -34,6 +34,7 @@ h2 {
     line-height: 1.5em;
     font-size: 20px;
     z-index: 1000;
+    padding-top: 20px;
 }
 
 a {
@@ -320,6 +321,15 @@ p {
 
 .section-color-light-blue {
     background-color: rgba(0,39,230,0.11);
+}
+
+.section-color-light-black {
+    background-color: #2a3335;
+    color: white;
+}
+
+.section-color-light-black p {
+    color: white;
 }
 
 .section-color-light-purple {
