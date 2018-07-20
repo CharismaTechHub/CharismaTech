@@ -109,6 +109,7 @@ textarea {
 .row {
     margin-right: 0px !important;
     margin-left: 0px !important;
+    border-bottom: 4px solid #e2e2e2;
 }
 
 .row-submit {

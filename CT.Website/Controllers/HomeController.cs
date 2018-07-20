@@ -12,9 +12,14 @@ namespace CT.Website.Controllers
 		public ActionResult Index()
 		{
 			return View();
-		}
+        }
 
-		public ActionResult About()
+        public ActionResult Services()
+		{
+			return View();
+        }
+
+    public ActionResult About()
 		{
 			return View();
 		}
