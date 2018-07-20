@@ -1,9 +1,16 @@
 ﻿@model CT.Website.Models.TextComponent
-
 @{
     Layout = null;
 }
 
-<p>@Model.Title</p>
-<p>@Model.Description</p>
-<p>@Model.LinkDescription</p>
+<section class="component-section @Model.ColorClass">
+    <div class="container">
+        <div class="page-title">
+            <h2>@Model.Title</h2>
+        </div>
+        <div class="summary">@Html.Raw(@Model.Description)</div>
+        <div class="linkHolder">
+            <a href="@Model.LinkUrl">@Model.LinkText</a>
+        </div>
+    </div>
+</section>
