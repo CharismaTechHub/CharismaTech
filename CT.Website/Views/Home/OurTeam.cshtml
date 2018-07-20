@@ -2,12 +2,20 @@
 @model List<TeamMember>
 
 @{
-    ViewBag.Title = "Our Team";    
+    ViewBag.Title = "Our Team";
+    var heroOurTeam = new Hero()
+    {
+        ImageUrl = "/../Images/florencia-viadana-744467-unsplash.jpg",
+        Title = "Our Team"
+    };
 }
 
+<div class="row">
+    <section class="component-section">
+        @{ Html.RenderPartial("~/Views/Components/HeroComponent.cshtml", heroOurTeam); }
+    </section>
+</div>
 <div class="container page-container">
-    <h1>@ViewBag.Title</h1>
-
     @if (Model != null && Model.Any())
     {
         <ul class="list-unstyled">
@@ -16,7 +24,7 @@
                 <li class="teamMember">
                     <div class="row">
                         <div class="col-xs-8 col-md-3">
-                            <img src="@teamMember.ImageUrl" alt="member image" class="teamMemberImg"/>
+                            <img src="@teamMember.ImageUrl" alt="member image" class="teamMemberImg" />
                         </div>
                         <div class="col-xs-10 col-md-9">
                             <h2>@teamMember.Name</h2>
