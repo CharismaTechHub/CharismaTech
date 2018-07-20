@@ -6,12 +6,12 @@
     var heroOurTeam = new Hero()
     {
         ImageUrl = "/../Images/florencia-viadana-744467-unsplash.jpg",
-        Title = "Our Team"
+        Title = ViewBag.Title
     };
 }
 
 <div class="row">
-    <section class="component-section">
+    <section class="hero-section">
         @{ Html.RenderPartial("~/Views/Components/HeroComponent.cshtml", heroOurTeam); }
     </section>
 </div>
