@@ -112,7 +112,7 @@ textarea {
         padding: 20px 150px 0px 150px;
     }
 }*/
-@media(min-width: 1024px) {
+@media(min-width: 1024px) and (max-width: 2500px) {
     .page-sub-title {
         font-size: 36px;
     }
@@ -124,6 +124,20 @@ textarea {
     .form-section {
         background-size: 700px;
     }
+}
+
+@media(min-width: 2500px) {
+    .page-sub-title {
+        font-size: 36px;
+    }
+
+    .form-container {
+        padding: 20px 150px 0px 150px;
+    }
+
+    .form-section {
+        background-size: 700px;
+    }    
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -316,22 +330,8 @@ div.header-menu .menu-links {
     float: right;
 }
 
-@media (min-width: 1200px) {
-    .container.header-container {
-        max-width: 1400px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container.header-container {
-        max-width: 1400px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container.header-container {
-        max-width: 1400px;
-    }
+.container.header-container {
+    max-width: 95%;
 }
 /* End Header styles */
 
