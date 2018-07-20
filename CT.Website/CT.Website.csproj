@@ -147,11 +147,11 @@
     <Content Include="Images\anca.jpg" />
     <Content Include="Images\cosmin.jpg" />
     <Content Include="Images\cristina.jpg" />
+    <Content Include="Images\envelope.png" />
     <Content Include="Images\envelopes.png" />
     <Content Include="Images\florencia-viadana-744467-unsplash.jpg" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\paper-plane.png" />
-    <Content Include="Images\single-envelope.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

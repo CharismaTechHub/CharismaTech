@@ -83,25 +83,6 @@ textarea {
 }
 
 /*Responsive generic styles*/
-
-/*Desktop styles*/
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-    .page-sub-title {
-        font-size: 25px;
-    }
-}
-
-@media(min-width: 768px) {
-    .page-sub-title {
-        font-size: 36px;
-    }
-
-    .form-container {
-        padding: 20px 150px 0px 150px;
-    }
-}
-
-
 /*Mobile and Tablet Styles*/
 @media(max-width: 768px) {
     h2 {
@@ -115,16 +96,55 @@ textarea {
     .form-container {
         padding: 20px 0px 0px 0px;
     }
+
+    .form-section {
+        background-size: 300px;
+    }
+}
+
+/*Desktop styles*/
+/*@media(min-width: 768px) {
+    .page-sub-title {
+        font-size: 36px;
+    }
+
+    .form-container {
+        padding: 20px 150px 0px 150px;
+    }
+}*/
+@media(min-width: 1024px) {
+    .page-sub-title {
+        font-size: 36px;
+    }
+
+    .form-container {
+        padding: 20px 150px 0px 150px;
+    }
+
+    .form-section {
+        background-size: 700px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .page-sub-title {
+        font-size: 25px;
+    }
+
+    .form-section {
+        background-size: 500px;
+    }
 }
 
 /*Form styles.*/
 
 .form-section {
     background-color: #2a3335;
-    background-image: url('../Images/envelopes.png');
+    /*background-image: url('../Images/envelopes.png');*/
+    background-image: url('../Images/envelope.png');
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: auto;
+    /*background-size: 700px;*/
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25) inset;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     color: #ffffff;
