@@ -34,13 +34,13 @@ h2 {
     line-height: 1.5em;
     font-size: 20px;
     z-index: 1000;
+    padding-top: 20px;
 }
 
 a {
     color: rgb(98, 85, 229);
     font-size: 24px;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 a:hover,
@@ -49,9 +49,10 @@ a:focus {
     text-decoration: underline;
 }
 
-.linkHolder{
-    padding-top:5px;
-    text-align:center;
+.linkHolder {
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -284,6 +285,7 @@ div.header-menu {
 div.header-menu .navbar-nav > li > a {
     color: rgb(27, 24, 64);
     font-size: 24px;
+    text-transform: uppercase;
 }
 
 div.header-menu .navbar-nav > li > a:hover {
@@ -343,6 +345,15 @@ p {
 
 .section-color-light-blue {
     background-color: rgba(0,39,230,0.11);
+}
+
+.section-color-light-black {
+    background-color: #2a3335;
+    color: white;
+}
+
+.section-color-light-black p {
+    color: white;
 }
 
 .section-color-light-purple {
