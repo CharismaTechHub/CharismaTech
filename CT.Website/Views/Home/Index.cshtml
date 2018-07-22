@@ -5,12 +5,14 @@
     TextComponent aboutUs = TextComponentRepository.AboutUsComponent();
     TextComponent ourTeam = TextComponentRepository.OurTeamComponent();
     TextComponent ourServices = TextComponentRepository.OurServicesComponent();
+    var teamMemberList = TeamMemberRepository.GetTeamMembers();
 }
 <div class="row">
     @{ Html.RenderPartial("~/Views/Components/TextComponent.cshtml", aboutUs); }
 </div>
 <div class="row">
-    @{ Html.RenderPartial("~/Views/Components/TextComponent.cshtml", ourTeam); }
+    @{ Html.RenderPartial("~/Views/Components/TeamComponent.cshtml", teamMemberList); }
+    @*@{ Html.RenderPartial("~/Views/Components/TextComponent.cshtml", ourTeam); }*@
 </div>
 <div class="row">
     @{ Html.RenderPartial("~/Views/Components/TextComponent.cshtml", ourServices); }

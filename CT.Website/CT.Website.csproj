@@ -147,11 +147,18 @@
     <Content Include="Images\anca.jpg" />
     <Content Include="Images\cosmin.jpg" />
     <Content Include="Images\cristina.jpg" />
+    <Content Include="Images\email.png" />
+    <Content Include="Images\email1.png" />
+    <Content Include="Images\email2.png" />
     <Content Include="Images\envelope.png" />
     <Content Include="Images\envelopes.png" />
     <Content Include="Images\florencia-viadana-744467-unsplash.jpg" />
+    <Content Include="Images\linkedin.png" />
+    <Content Include="Images\linkedin1.png" />
+    <Content Include="Images\linkedin2.png" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\paper-plane.png" />
+    <Content Include="Images\skype.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -188,6 +195,7 @@
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Components\TextComponent.cshtml" />
     <Content Include="Views\Components\HeroComponent.cshtml" />
+    <Content Include="Views\Components\TeamComponent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

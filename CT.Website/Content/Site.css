@@ -28,6 +28,7 @@ h2 {
     text-align: center;
     line-height: 1.2em;
     z-index: 1000;
+    padding-bottom:3%;
 }
 
 .summary {
@@ -50,11 +51,25 @@ a:focus {
 }
 
 .linkHolder {
-    padding-top: 5px;
+    padding-top: 5%;
     text-align: center;
     text-transform: uppercase;
 }
 
+.btn-white {
+    background-color: white;
+    border-color: white;
+    color: #2a3335;
+    letter-spacing: 1.6px;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+    .btn-white:hover {
+        background-color: #2a3335;
+        border-color: white;
+        color:white;
+    }
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -90,7 +105,7 @@ textarea {
     }
 
     .page-sub-title {
-        font-size: 20px;
+        font-size: 5%;
     }
 
     .form-container {
@@ -114,7 +129,7 @@ textarea {
 }*/
 @media(min-width: 1024px) and (max-width: 2500px) {
     .page-sub-title {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .form-container {
@@ -379,7 +394,55 @@ p {
 .section-color-light-purple {
     background-color: #F633FF;
 }
+/*End Text Component styles*/
 
+/*Team Component styles*/
+.teamMemberImgComponent {
+    width: 150px;
+    border-radius: 80px;
+}
+
+.component-row {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.team-function {
+   color: #999999;
+   text-transform: uppercase;
+}
+
+a.linkedin {
+    background: transparent url(../Images/linkedin2.png) top left no-repeat;
+    background-size: 40px;
+    content: '';
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+
+a.email {
+    background: transparent url(../Images/email2.png) top left no-repeat;
+    background-size: 40px;
+    content: '';
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+
+a.skype {
+    background: transparent url(../Images/skype.png) top left no-repeat;
+    background-size: 40px;
+    content: '';
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+
+/*End team component styles*/
 /* Hero Component styles */
 .hero-section {
     background-repeat: no-repeat;

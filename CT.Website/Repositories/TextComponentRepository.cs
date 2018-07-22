@@ -31,18 +31,7 @@ namespace CT.Website.Repositories
         {
             TextComponent ourTeamComponent = new TextComponent();
             ourTeamComponent.Title = "Our Team";
-            ourTeamComponent.Description = @"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Aenean fermentum neque sit amet dolor ornare, eget pellentesque justo sollicitudin. Morbi tincidunt ligula elementum metus sodales porta.</p>
-                                        <p></p>
-                                        <p>
-                                        Aenean vitae sodales lacus. Ut lectus quam, dapibus ac rhoncus ut, mollis at urna. Cras nec pretium est. Ut ultricies quis nisl in imperdiet. 
-                                        Donec varius ac ex eget malesuada. Nunc rutrum nunc nec cursus fringilla. Praesent sollicitudin metus quam, a commodo neque ullamcorper vel.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Aenean fermentum neque sit amet dolor ornare, eget pellentesque justo sollicitudin. Morbi tincidunt ligula elementum metus sodales porta.</p>
-                                        <p></p>
-                                        <p>
-                                        Aenean vitae sodales lacus. Ut lectus quam, dapibus ac rhoncus ut, mollis at urna. Cras nec pretium est. Ut ultricies quis nisl in imperdiet. 
-                                        Donec varius ac ex eget malesuada. Nunc rutrum nunc nec cursus fringilla. Praesent sollicitudin metus quam, a commodo neque ullamcorper vel.</p>";
+            ourTeamComponent.Description = @"<p>Our team is prepared to support you and your business decisions.</p>";
             ourTeamComponent.LinkText = "More About Us";
             ourTeamComponent.LinkUrl = "/our-team";
             ourTeamComponent.ColorClass = "section-color-light-black";

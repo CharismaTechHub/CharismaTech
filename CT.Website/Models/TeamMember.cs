@@ -10,6 +10,8 @@
 
 		public string Email { get; set; }
 
+        public string Linkedin { get; set; }
+
 		public string ImageUrl { get; set; }
 	}
 }
