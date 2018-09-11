@@ -28,7 +28,7 @@ h2 {
     text-align: center;
     line-height: 1.2em;
     z-index: 1000;
-    padding-bottom:3%;
+    padding-bottom: 3%;
 }
 
 .summary {
@@ -44,11 +44,11 @@ a {
     font-weight: 600;
 }
 
-a:hover,
-a:focus {
-    color: rgb(98, 85, 229);
-    text-decoration: underline;
-}
+    a:hover,
+    a:focus {
+        color: rgb(98, 85, 229);
+        text-decoration: underline;
+    }
 
 .linkHolder {
     padding-top: 5%;
@@ -65,10 +65,11 @@ a:focus {
     padding-right: 20px;
     padding-left: 20px;
 }
+
     .btn-white:hover {
         background-color: #2a3335;
         border-color: white;
-        color:white;
+        color: white;
     }
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -115,6 +116,14 @@ textarea {
     .form-section {
         background-size: 300px;
     }
+
+    img.logo {
+        width: 150px;
+    }
+
+    div.header-menu .navbar-nav > li > a {
+        font-size: 14px;
+    }
 }
 
 /*Desktop styles*/
@@ -139,6 +148,14 @@ textarea {
     .form-section {
         background-size: 700px;
     }
+
+    img.logo {
+        width: 300px;
+    }
+
+    div.header-menu .navbar-nav > li > a {
+        font-size: 24px;
+    }
 }
 
 @media(min-width: 2500px) {
@@ -152,7 +169,15 @@ textarea {
 
     .form-section {
         background-size: 700px;
-    }    
+    }
+
+    img.logo {
+        width: 500px;
+    }
+
+    div.header-menu .navbar-nav > li > a {
+        font-size: 48px;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -162,6 +187,14 @@ textarea {
 
     .form-section {
         background-size: 500px;
+    }
+
+    img.logo {
+        width: 160px;
+    }
+
+    div.header-menu .navbar-nav > li > a {
+        font-size: 14px;
     }
 }
 
@@ -320,7 +353,6 @@ li.teamMember h3 {
 
 /* Header styles */
 img.logo {
-    width: 300px;
     height: auto;
 }
 
@@ -331,18 +363,28 @@ div.header-menu {
     border: none;
 }
 
-div.header-menu .navbar-nav > li > a {
-    color: rgb(27, 24, 64);
-    font-size: 24px;
-    text-transform: uppercase;
+    div.header-menu .navbar-nav > li > a {
+        color: rgb(27, 24, 64);        
+        text-transform: uppercase;
+    }
+
+        div.header-menu .navbar-nav > li > a:hover {
+            color: rgb(98, 85, 229);
+        }
+
+    div.header-menu .menu-links {
+        float: right;
+        padding-top: 1%;
+    }
+
+.navbar-toggle {
+    background-color: rgb(98, 85, 229);
 }
 
-div.header-menu .navbar-nav > li > a:hover {
-    color: rgb(98, 85, 229);
-}
-
-div.header-menu .menu-links {
-    float: right;
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: rgb(98, 85, 229);
+    border-color: #333333;
 }
 
 .container.header-container {
@@ -374,8 +416,8 @@ p {
     padding: 100px 0px 105px 0px;
 }
 
-.section-color-grey{
-    background-color:#f7f7f7;
+.section-color-grey {
+    background-color: #f7f7f7;
 }
 
 .section-color-light-blue {
@@ -387,9 +429,9 @@ p {
     color: white;
 }
 
-.section-color-light-black p {
-    color: white;
-}
+    .section-color-light-black p {
+        color: white;
+    }
 
 .section-color-light-purple {
     background-color: #F633FF;
@@ -408,8 +450,8 @@ p {
 }
 
 .team-function {
-   color: #999999;
-   text-transform: uppercase;
+    color: #999999;
+    text-transform: uppercase;
 }
 
 a.linkedin {
@@ -454,7 +496,7 @@ a.skype {
 
 div.hero-component {
     height: 400px;
-    width: 100%;        
+    width: 100%;
 }
 
 h1.hero-title {
