@@ -111,7 +111,13 @@ textarea {
 
 /*Responsive generic styles*/
 /*Mobile and Tablet Styles*/
-@media(max-width: 768px) {
+@media(max-width: 320px) {
+    div.hero-component {
+        width: 120% !important;
+    }
+}
+
+@media(max-width: 767px) {
     h2 {
         font-size: 40px;
     }
@@ -132,6 +138,24 @@ textarea {
         background-size: 300px;
     }
 
+    img.logo {
+        width: 150px;
+    }
+
+    div.header-menu .navbar-nav > li > a {
+        font-size: 14px;
+    }
+
+    div.hero-component {
+        height: 100px;
+    }
+
+    h1.hero-title {
+        font-size: 16px;  
+        padding-top: 50px !important;
+        padding-left: 25px !important;
+    }
+
     .summary {
         line-height: 1.3em;
         font-size: 15px;
@@ -150,7 +174,7 @@ textarea {
         padding: 20px 150px 0px 150px;
     }
 }*/
-@media(min-width: 1024px) and (max-width: 2500px) {
+@media(min-width: 1025px) and (max-width: 2500px) {
     .page-sub-title {
         font-size: 24px;
     }
@@ -162,9 +186,25 @@ textarea {
     .form-section {
         background-size: 700px;
     }
+
+    img.logo {
+        width: 300px;
+    }
+
+    div.header-menu .navbar-nav > li > a {
+        font-size: 24px;
+    }
+
+    div.hero-component {
+        height: 350px;
+    }
+
+    h1.hero-title {
+        font-size: 48px;
+    }
 }
 
-@media(min-width: 2500px) {
+@media(min-width: 2501px) {
     .page-sub-title {
         font-size: 36px;
     }
@@ -176,6 +216,22 @@ textarea {
     .form-section {
         background-size: 700px;
     }
+
+    img.logo {
+        width: 500px;
+    }
+
+    div.header-menu .navbar-nav > li > a {
+        font-size: 48px;
+    }
+
+    div.hero-component {
+        height: 600px;
+    }
+
+    h1.hero-title {
+        font-size: 72px;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -185,6 +241,22 @@ textarea {
 
     .form-section {
         background-size: 500px;
+    }
+
+    img.logo {
+        width: 160px;
+    }
+
+    div.header-menu .navbar-nav > li > a {
+        font-size: 14px;
+    }
+
+    div.hero-component {
+        height: 200px;
+    }
+
+    h1.hero-title {
+        font-size: 36px;
     }
 }
 
@@ -343,7 +415,6 @@ li.teamMember h3 {
 
 /* Header styles */
 img.logo {
-    width: 300px;
     height: auto;
 }
 
@@ -355,8 +426,7 @@ div.header-menu {
 }
 
     div.header-menu .navbar-nav > li > a {
-        color: rgb(27, 24, 64);
-        font-size: 24px;
+        color: rgb(27, 24, 64);        
         text-transform: uppercase;
     }
 
@@ -366,7 +436,18 @@ div.header-menu {
 
     div.header-menu .menu-links {
         float: right;
+        padding-top: 1%;
     }
+
+.navbar-toggle {
+    background-color: rgb(98, 85, 229);
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: rgb(98, 85, 229);
+    border-color: #333333;
+}
 
 .container.header-container {
     max-width: 95%;
@@ -472,21 +553,19 @@ a.skype {
     background-size: auto;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25) inset;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    padding: 50px 0px 0px 0px;
+    /*padding: 50px 0px 0px 0px;*/
 }
 
 div.hero-component {
-    height: 400px;
     width: 100%;
 }
 
 h1.hero-title {
     z-index: 1000;
     color: white;
-    padding-left: 120px;
-    padding-top: 120px;
-    text-transform: uppercase;
-    font-size: 48px;
+    padding-left: 5%;
+    padding-top: 10%;
+    text-transform: uppercase;   
     font-weight: bold;
 }
 /* End Hero Component styles */
