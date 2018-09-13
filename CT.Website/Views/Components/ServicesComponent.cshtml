@@ -1,0 +1,49 @@
+﻿@using CT.Website.Models;
+@using CT.Website.Repositories;
+@model List<Service>
+@{
+    Layout = null;
+    TextComponent textComponent = TextComponentRepository.OurServicesComponent();
+}
+
+<section class="component-section @textComponent.ColorClass">
+    <div class="container">
+        <div class="page-title">
+            <h2>@textComponent.Title</h2>
+        </div>
+        <div class="page-sub-title">@Html.Raw(@textComponent.Description)</div>
+        <div class="row component-row">
+            @foreach (var service in Model)
+            {
+                if (service.TopImage)
+                {
+                    <div class="form-item col-md-4 col-md-4-custom">
+                        <div class="row">
+                            <div class="col service-col">
+                                <img src="@service.ImageUrl" alt="service image" class="service-image" />
+                            </div>
+                            <div class="col service-col">
+                                <h3>@service.Title</h3>
+                                <h4 class="summary">@service.Description</h4>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="form-item col-md-4 col-md-4-custom swapped">
+                        <div class="col service-col">
+                            <h3>@service.Title</h3>
+                            <h4 class="summary">@service.Description</h4>
+                        </div>
+                        <div class="col service-col">
+                            <img src="@service.ImageUrl" alt="service image" class="service-image" />
+                        </div>
+                    </div>}
+            }
+        </div>
+        <div class="linkHolderWhite">
+            <a href="@textComponent.LinkUrl" class="btn btn-primary btn-white">@textComponent.LinkText</a>
+        </div>
+    </div>
+</section>

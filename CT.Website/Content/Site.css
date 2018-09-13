@@ -28,7 +28,7 @@ h2 {
     text-align: center;
     line-height: 1.2em;
     z-index: 1000;
-    padding-bottom:3%;
+    padding-bottom: 3%;
 }
 
 .summary {
@@ -44,11 +44,11 @@ a {
     font-weight: 600;
 }
 
-a:hover,
-a:focus {
-    color: rgb(98, 85, 229);
-    text-decoration: underline;
-}
+    a:hover,
+    a:focus {
+        color: rgb(98, 85, 229);
+        text-decoration: underline;
+    }
 
 .linkHolder {
     padding-top: 5%;
@@ -56,19 +56,31 @@ a:focus {
     text-transform: uppercase;
 }
 
+.linkHolderWhite {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media(min-width: 1024px) {
+    .linkHolderWhite {
+        padding-top: 5%;
+    }
+}
+
 .btn-white {
     background-color: white;
-    border-color: white;
+    border-color: black;
     color: #2a3335;
     letter-spacing: 1.6px;
     font-size: 20px;
     padding-right: 20px;
     padding-left: 20px;
 }
+
     .btn-white:hover {
         background-color: #2a3335;
         border-color: white;
-        color:white;
+        color: white;
     }
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -104,6 +116,10 @@ textarea {
         font-size: 40px;
     }
 
+    h3 {
+        font-size: 20px;
+    }
+
     .page-sub-title {
         font-size: 5%;
     }
@@ -114,6 +130,13 @@ textarea {
 
     .form-section {
         background-size: 300px;
+    }
+
+    .summary {
+        line-height: 1.3em;
+        font-size: 15px;
+        z-index: 1000;
+        padding-top: 10px;
     }
 }
 
@@ -152,7 +175,7 @@ textarea {
 
     .form-section {
         background-size: 700px;
-    }    
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -331,19 +354,19 @@ div.header-menu {
     border: none;
 }
 
-div.header-menu .navbar-nav > li > a {
-    color: rgb(27, 24, 64);
-    font-size: 24px;
-    text-transform: uppercase;
-}
+    div.header-menu .navbar-nav > li > a {
+        color: rgb(27, 24, 64);
+        font-size: 24px;
+        text-transform: uppercase;
+    }
 
-div.header-menu .navbar-nav > li > a:hover {
-    color: rgb(98, 85, 229);
-}
+        div.header-menu .navbar-nav > li > a:hover {
+            color: rgb(98, 85, 229);
+        }
 
-div.header-menu .menu-links {
-    float: right;
-}
+    div.header-menu .menu-links {
+        float: right;
+    }
 
 .container.header-container {
     max-width: 95%;
@@ -374,12 +397,12 @@ p {
     padding: 100px 0px 105px 0px;
 }
 
-.section-color-grey{
-    background-color:#f7f7f7;
+.section-color-grey {
+    background-color: #f7f7f7;
 }
 
-.section-color-light-blue {
-    background-color: rgba(0,39,230,0.11);
+.section-color-light-white {
+    background-color: background-color: white;
 }
 
 .section-color-light-black {
@@ -387,9 +410,9 @@ p {
     color: white;
 }
 
-.section-color-light-black p {
-    color: white;
-}
+    .section-color-light-black p {
+        color: white;
+    }
 
 .section-color-light-purple {
     background-color: #F633FF;
@@ -408,8 +431,8 @@ p {
 }
 
 .team-function {
-   color: #999999;
-   text-transform: uppercase;
+    color: #999999;
+    text-transform: uppercase;
 }
 
 a.linkedin {
@@ -454,7 +477,7 @@ a.skype {
 
 div.hero-component {
     height: 400px;
-    width: 100%;        
+    width: 100%;
 }
 
 h1.hero-title {
@@ -468,6 +491,77 @@ h1.hero-title {
 }
 /* End Hero Component styles */
 
+/* Services COmponent styles*/
+.service-image {
+    max-width: 100%;
+}
+
+.col-md-4-custom {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.service-col {
+    height: 16.5em;
+}
+
+@media(max-width: 1200px) {
+    .service-col {
+        height: 13.5em;
+    }
+}
+
+div.col.service-col h3 {
+    padding-top: 12%;
+}
+
+@media(max-width: 350px) {
+    div.col.service-col h3 {
+        padding-top: 1em;
+    }
+
+    .service-col {
+        height: 10em;
+    }
+
+    .service-image {
+        max-width: 75%;
+    }
+
+    .col-md-4-custom {
+        margin-bottom: 0px;
+    }
+}
+
+@media(min-width: 350px) and (max-width: 460px) {
+    div.col.service-col h3 {
+        padding-top: 11%;
+    }
+
+    .service-col {
+        height: 9.5em;
+    }
+
+    .service-image {
+        max-width: 65%;
+    }
+}
+
+@media(min-width: 460px) and (max-width: 750px) {
+    .service-col {
+        height: 14em;
+    }
+
+    div.col.service-col h3 {
+        padding-top: 9%;
+    }
+
+    .service-image {
+        max-width: 65%;
+    }
+}
+
+/* End of Services COmponent styles*/
 /* Footer styles */
 footer p {
     font-size: 20px;
