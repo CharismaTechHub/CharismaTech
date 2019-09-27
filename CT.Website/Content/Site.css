@@ -124,7 +124,12 @@ textarea {
     }
 
     img.logo {
-        width: 150px;
+        width: 75px;
+        height: 74px;
+        box-sizing: border-box;
+        padding-left: 75px;
+        background: url("../Images/Logos/logo_mobile_resized.png") left top no-repeat;
+        background-size: 75px 74px;
     }
 
     div.header-menu .navbar-nav > li > a {
@@ -166,7 +171,12 @@ textarea {
     }
 
     img.logo {
-        width: 300px;
+        width: 500px;
+        height: 92px;
+        box-sizing: border-box;
+        padding-left: 500px;
+        background: url("../Images/Logos/logo_desktop_resized.png") left top no-repeat;
+        background-size: 500px 92px;
     }
 
     div.header-menu .navbar-nav > li > a {
@@ -197,6 +207,11 @@ textarea {
 
     img.logo {
         width: 500px;
+        height: 92px;
+        box-sizing: border-box;
+        padding-left: 500px;
+        background: url("../Images/Logos/logo_desktop_resized.png") left top no-repeat;
+        background-size: 500px 92px;
     }
 
     div.header-menu .navbar-nav > li > a {
@@ -222,7 +237,12 @@ textarea {
     }
 
     img.logo {
-        width: 160px;
+        width: 200px;
+        height: 81px;
+        box-sizing: border-box;
+        padding-left: 200px;
+        background: url("../Images/Logos/logo_tablet_resized.png") left top no-repeat;
+        background-size: 200px 81px;
     }
 
     div.header-menu .navbar-nav > li > a {
@@ -392,10 +412,6 @@ li.teamMember h3 {
 /*End Team Member styles*/
 
 /* Header styles */
-img.logo {
-    height: auto;
-}
-
 div.header-menu {
     background-color: #f7f7f7;
     padding-top: 40px;
