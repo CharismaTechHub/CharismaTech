@@ -56,9 +56,20 @@ a {
     text-transform: uppercase;
 }
 
+.linkHolderWhite {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media(min-width: 1024px) {
+    .linkHolderWhite {
+        padding-top: 5%;
+    }
+}
+
 .btn-white {
     background-color: white;
-    border-color: white;
+    border-color: black;
     color: #2a3335;
     letter-spacing: 1.6px;
     font-size: 20px;
@@ -111,6 +122,10 @@ textarea {
         font-size: 40px;
     }
 
+    h3 {
+        font-size: 20px;
+    }
+
     .page-sub-title {
         font-size: 5%;
     }
@@ -144,6 +159,13 @@ textarea {
         font-size: 16px;  
         padding-top: 50px !important;
         padding-left: 25px !important;
+    }
+
+    .summary {
+        line-height: 1.3em;
+        font-size: 15px;
+        z-index: 1000;
+        padding-top: 10px;
     }
 }
 
@@ -476,8 +498,8 @@ p {
     background-color: #f7f7f7;
 }
 
-.section-color-light-blue {
-    background-color: rgba(0,39,230,0.11);
+.section-color-light-white {
+    background-color: background-color: white;
 }
 
 .section-color-light-black {
@@ -564,6 +586,77 @@ h1.hero-title {
 }
 /* End Hero Component styles */
 
+/* Services COmponent styles*/
+.service-image {
+    max-width: 100%;
+}
+
+.col-md-4-custom {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.service-col {
+    height: 16.5em;
+}
+
+@media(max-width: 1200px) {
+    .service-col {
+        height: 13.5em;
+    }
+}
+
+div.col.service-col h3 {
+    padding-top: 12%;
+}
+
+@media(max-width: 350px) {
+    div.col.service-col h3 {
+        padding-top: 1em;
+    }
+
+    .service-col {
+        height: 10em;
+    }
+
+    .service-image {
+        max-width: 75%;
+    }
+
+    .col-md-4-custom {
+        margin-bottom: 0px;
+    }
+}
+
+@media(min-width: 350px) and (max-width: 460px) {
+    div.col.service-col h3 {
+        padding-top: 11%;
+    }
+
+    .service-col {
+        height: 9.5em;
+    }
+
+    .service-image {
+        max-width: 65%;
+    }
+}
+
+@media(min-width: 460px) and (max-width: 750px) {
+    .service-col {
+        height: 14em;
+    }
+
+    div.col.service-col h3 {
+        padding-top: 9%;
+    }
+
+    .service-image {
+        max-width: 65%;
+    }
+}
+
+/* End of Services COmponent styles*/
 /* Footer styles */
 footer p {
     font-size: 20px;

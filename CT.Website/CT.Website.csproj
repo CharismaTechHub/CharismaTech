@@ -127,11 +127,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Hero.cs" />
+    <Compile Include="Models\Service.cs" />
     <Compile Include="Models\TextComponent.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\TeamMember.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EmailSenderRepository.cs" />
+    <Compile Include="Repositories\ServiceRepository.cs" />
     <Compile Include="Repositories\TeamMemberRepository.cs" />
     <Compile Include="Repositories\TextComponentRepository.cs" />
     <Compile Include="Utils\Positions.cs" />
@@ -158,10 +160,14 @@
     <Content Include="Images\linkedin2.png" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\paper-plane.png" />
+    <Content Include="Images\services1.jpg" />
+    <Content Include="Images\services2.jpg" />
+    <Content Include="Images\services3.jpg" />
     <Content Include="Images\skype.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\global.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -196,6 +202,7 @@
     <Content Include="Views\Components\TextComponent.cshtml" />
     <Content Include="Views\Components\HeroComponent.cshtml" />
     <Content Include="Views\Components\TeamComponent.cshtml" />
+    <Content Include="Views\Components\ServicesComponent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

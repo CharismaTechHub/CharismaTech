@@ -3,16 +3,18 @@
 @{
     ViewBag.Title = "Home Page";
     TextComponent aboutUs = TextComponentRepository.AboutUsComponent();
-    TextComponent ourTeam = TextComponentRepository.OurTeamComponent();
     TextComponent ourServices = TextComponentRepository.OurServicesComponent();
     var teamMemberList = TeamMemberRepository.GetTeamMembers();
+    var servicesList = ServiceRepository.GetServices();
 }
 <div class="row">
     @{ Html.RenderPartial("~/Views/Components/TextComponent.cshtml", aboutUs); }
 </div>
 <div class="row">
     @{ Html.RenderPartial("~/Views/Components/TeamComponent.cshtml", teamMemberList); }
-    @*@{ Html.RenderPartial("~/Views/Components/TextComponent.cshtml", ourTeam); }*@
+</div>
+<div class="row">
+    @{ Html.RenderPartial("~/Views/Components/ServicesComponent.cshtml", servicesList); }
 </div>
 <div class="row">
     @{ Html.RenderPartial("~/Views/Components/TextComponent.cshtml", ourServices); }

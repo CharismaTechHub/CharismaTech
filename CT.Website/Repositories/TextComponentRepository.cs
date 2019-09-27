@@ -22,7 +22,7 @@ namespace CT.Website.Repositories
                                         Donec varius ac ex eget malesuada. Nunc rutrum nunc nec cursus fringilla. Praesent sollicitudin metus quam, a commodo neque ullamcorper vel.</p>";
             aboutUsComponent.LinkText = "Want to know more?";
             aboutUsComponent.LinkUrl = "/about-us";
-            aboutUsComponent.ColorClass = "section-color-light-blue";
+            aboutUsComponent.ColorClass = "section-color-light-white";
 
             return aboutUsComponent;
         }
@@ -42,22 +42,11 @@ namespace CT.Website.Repositories
         public static TextComponent OurServicesComponent()
         {
             TextComponent ourServicesComponent = new TextComponent();
-            ourServicesComponent.Title = "What We Offer";
-            ourServicesComponent.Description = @"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Aenean fermentum neque sit amet dolor ornare, eget pellentesque justo sollicitudin. Morbi tincidunt ligula elementum metus sodales porta.</p>
-                                        <p></p>
-                                        <p>
-                                        Aenean vitae sodales lacus. Ut lectus quam, dapibus ac rhoncus ut, mollis at urna. Cras nec pretium est. Ut ultricies quis nisl in imperdiet. 
-                                        Donec varius ac ex eget malesuada. Nunc rutrum nunc nec cursus fringilla. Praesent sollicitudin metus quam, a commodo neque ullamcorper vel.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Aenean fermentum neque sit amet dolor ornare, eget pellentesque justo sollicitudin. Morbi tincidunt ligula elementum metus sodales porta.</p>
-                                        <p></p>
-                                        <p>
-                                        Aenean vitae sodales lacus. Ut lectus quam, dapibus ac rhoncus ut, mollis at urna. Cras nec pretium est. Ut ultricies quis nisl in imperdiet. 
-                                        Donec varius ac ex eget malesuada. Nunc rutrum nunc nec cursus fringilla. Praesent sollicitudin metus quam, a commodo neque ullamcorper vel.</p>";
-            ourServicesComponent.LinkText = "More About Us";
+            ourServicesComponent.Title = "Our Services";
+            ourServicesComponent.Description = @"<p>Need help developing or improving your software service or application? Maybe we can help you!</p>";
+            ourServicesComponent.LinkText = "Check out more";
             ourServicesComponent.LinkUrl = "/our--sevices";
-            ourServicesComponent.ColorClass = "section-color-light-blue";
+            ourServicesComponent.ColorClass = "section-color-light-white";
 
             return ourServicesComponent;
         }
