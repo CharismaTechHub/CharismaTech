@@ -15,8 +15,9 @@ h1 {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 300;
+    color: rgb(238, 113, 38);
 }
 
 .page-title {
@@ -435,7 +436,7 @@ li.teamMember h3 {
 
 /* Header styles */
 div.header-menu {
-    background-color: #f7f7f7;
+    background-color: #2a3335;
     padding-top: 40px;
     padding-bottom: 10px;
     border: none;
@@ -502,13 +503,17 @@ p {
     background-color: background-color: white;
 }
 
+    .section-color-light-white h2, .section-color-light-white p {
+        color: purple;
+    }
+
 .section-color-light-black {
     background-color: #2a3335;
     color: white;
 }
 
     .section-color-light-black p {
-        color: white;
+        color: rgb(238, 113, 38); /** orange color from logo */
     }
 
 .section-color-light-purple {

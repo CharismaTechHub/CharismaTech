@@ -15,10 +15,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button-->             
+                </button-->
                 <a href="@Url.Action("Index", "Home")" class="navbar-brand">
-                        <img alt="logo" src="@Url.Content("~/Images/Logos/logo_desktop_resized.png")" class="logo" />
-                </a>                
+                    <img alt="logo" src="@Url.Content("~/Images/Logos/logo_desktop_resized.png")" class="logo" />
+                </a>
             </div>
             <!--div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav menu-links">
@@ -30,7 +30,7 @@
                 </ul>
             </div-->
         </div>
-    </div>
+    </div>    
     @RenderBody()
     <hr />
     <footer class="container">
@@ -40,6 +40,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/global")
     @RenderSection("scripts", required: false)
 </body>
 </html>
