@@ -8,17 +8,8 @@ namespace CT.Website.Repositories
         {
             TextComponent aboutUsComponent = new TextComponent();
             aboutUsComponent.Title = "Who We Are";
-            aboutUsComponent.Description = @"<p>We are three passionate developers who decided to take on the IT world, offering quality software solutions to our clients.</p>
-                                        <p></p>
-                                        <p>
-                                        Aenean vitae sodales lacus. Ut lectus quam, dapibus ac rhoncus ut, mollis at urna. Cras nec pretium est. Ut ultricies quis nisl in imperdiet. 
-                                        Donec varius ac ex eget malesuada. Nunc rutrum nunc nec cursus fringilla. Praesent sollicitudin metus quam, a commodo neque ullamcorper vel.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Aenean fermentum neque sit amet dolor ornare, eget pellentesque justo sollicitudin. Morbi tincidunt ligula elementum metus sodales porta.</p>
-                                        <p></p>
-                                        <p>
-                                        Aenean vitae sodales lacus. Ut lectus quam, dapibus ac rhoncus ut, mollis at urna. Cras nec pretium est. Ut ultricies quis nisl in imperdiet. 
-                                        Donec varius ac ex eget malesuada. Nunc rutrum nunc nec cursus fringilla. Praesent sollicitudin metus quam, a commodo neque ullamcorper vel.</p>";
+            aboutUsComponent.Description = @"<p>Our company started from the desire of three passionate developers who decided to take on the IT world.</p>                                       
+                                        <p>Thus, CharismaTech was founded in January 2018.</p>";
             aboutUsComponent.LinkText = "Want to know more?";
             aboutUsComponent.LinkUrl = "/about-us";
             aboutUsComponent.ColorClass = "section-color-light-black";

@@ -1,6 +1,6 @@
 ﻿/* Colors from the logo:
-   Charisma - rgb(27, 24, 64) 
-   Tech - rgb(98, 85, 229)
+   Charisma - (238, 113, 38) 
+   Tech - rgb(72, 38, 127)
 */
 
 body {
@@ -492,7 +492,7 @@ p {
     background-size: auto;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25) inset;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    padding: 100px 0px 105px 0px;
+    padding: 30px 0px 30px 0px;
 }
 
 .section-color-grey {
@@ -500,11 +500,11 @@ p {
 }
 
 .section-color-light-white {
-    background-color: background-color: white;
+    background-color: rgb(238, 113, 38);
 }
 
     .section-color-light-white h2, .section-color-light-white p {
-        color: purple;
+        color: rgb(72, 38, 127); /** purple color from logo */
     }
 
 .section-color-light-black {
@@ -533,7 +533,7 @@ p {
 }
 
 .team-function {
-    color: #999999;
+    color: rgb(72, 38, 127);
     text-transform: uppercase;
 }
 
